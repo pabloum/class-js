@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <form  action="" method="post">
+      Enter radius:
+      <br>
+      <input type="text" name="radius" value="" id = "radius" onblur="sphereVolume(this)">
+      <br><br>
+      <!-- <input type="submit" id="button" value="Submit"> -->
+    </form>
+
+    <script>
+    // document.getElementById("radius").addEventListener("blur", sphereVolume);
+
+    function sphereVolume(obj) {
+      // if (obj.value) {
+        alert("The volume of that sphere is " + (pow(obj.value,3)*4/3*Math.PI));
+      // }
+    }
+
+    </script>
+
+  </body>
+</html>
+
+
+<!-- otro: formulario para radio. al resultado calcularle el volumen a la esfera de ese radio y agregue al elemento con id = "result" -->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio2</title>
+  </head>
+  <body>
+
+    <!-- <script src="styles_dom.js"> </script> -->
+
+    <form action=""  method="post">
+      First name: <br>
+      <input type="text" name="firstName" value="" id="input_first" onblur="check(this)">
+      <br>
+      Last name: <br>
+      <input type="text" name="lastName" value="">
+      <br><br>
+      <input id="submit_form" type="submit" value="Submit">
+    </form>
+
+    <script>
+      // document.getElementById("input_first").addEventListener("blur", myFunction);
+      function check(obj) {
+        if (obj.value) {
+          document.getElementById("submit_form").setAttribute("disabled",true);
+          // alert("Input field lost focus.");
+        }
+      }
+    </script>
+
+
+  </body>
+</html>
+
+<!-- escriba una función q al momento de salir (onblur) del input valide si este se encuentra vació, en caso tal, hacer que el botoń submit quede deshabilitado (disable = "true") -->
